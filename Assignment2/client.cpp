@@ -7,7 +7,7 @@ using namespace std;
 // brought to you by Davit El matador Dgebuadze XD
 
 //Write the code for the polymorphic function. Label all output. Add a comment statement clearly identifying the polymorphic function.
-
+// I am calling polymorphic function for every instance when it is requested in cout
 void poly(Product& other) {
 	other.show(cout);
 }

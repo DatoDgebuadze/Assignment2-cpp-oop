@@ -1,5 +1,11 @@
 #include "FreshFood.h"
 
+// getting and initializing parameters + inherited ones
+FreshFood::FreshFood(int productName, string barCode, double uPrice, double w) :Product(productName, barCode) {
+	unitPrice = uPrice;
+	weight = w;
+}
+// could not make validation work here I guess i am missing something because i am tired rn
 
 FreshFood::FreshFood() { // default constructor 
 	cout << "Enter the weight of the product->: " << endl;
@@ -19,11 +25,7 @@ FreshFood::FreshFood() { // default constructor
 
 	}
 }
-// getting and initializing parameters + inherited ones
-FreshFood::FreshFood(int productName, string barCode, double uPrice, double w):Product(productName, barCode) {
-	unitPrice = uPrice;
-	weight = w;
-}
+
 // just a show function nothiing fancy
 void FreshFood::show(ostream& os){
 	os << "(Freshood) Unit Price is: " << unitPrice << endl;
