@@ -4,8 +4,20 @@
 FreshFood::FreshFood() { // default constructor 
 	cout << "Enter the weight of the product->: " << endl;
 	cin >> weight;
+	while (weight <=0 && weight >= 100)
+	{
+		cout << "Please Re enter the weight(1-100): " << endl;
+		cin >> weight;
+
+	}
 	cout << "Enter the unit price: " << endl;
 	cin >> unitPrice;
+	while (unitPrice <= 0 && unitPrice >= 100)
+	{
+		cout << "Please Re enter the weight(1-100): " << endl;
+		cin >> unitPrice;
+
+	}
 }
 // getting and initializing parameters + inherited ones
 FreshFood::FreshFood(int productName, string barCode, double uPrice, double w):Product(productName, barCode) {

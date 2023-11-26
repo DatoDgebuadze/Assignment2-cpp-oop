@@ -8,6 +8,10 @@ PrePackedFood::PrePackedFood(int barCode, string productName, double _uPrice):Pr
 PrePackedFood::PrePackedFood() {
 	cout << "Enter the unit Price: " << endl;
 	cin >> unitPrice;
+	while (unitPrice <= 0 || unitPrice > 99) {
+		cout << "Please Re-enter the unit Price(1-99): " << endl;
+		cin >> unitPrice;
+	}
 	
 };
 

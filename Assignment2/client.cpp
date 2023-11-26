@@ -36,7 +36,7 @@ int main()
 	cout << "Bar code=" << item->getBarCode() << endl << endl;
 	item->show(cout);
 	cout << "Call polymorphic function:\n ";
-
+	poly(*item);
 
 
 	cout << endl << endl;
@@ -51,7 +51,7 @@ int main()
 	cout << "Unit Price=" << pasta->getUnitPrice() << endl << endl;
 	pasta->show(cout);
 	cout << "Call polymorphic function:\n ";
-
+	poly(*pasta);
 
 
 	cout << endl << endl;
@@ -66,7 +66,7 @@ int main()
 	cout << "Unit Price=" << food->getUnitPrice() << endl << endl;
 	food->show(cout);
 	cout << "Call polymorphic function:\n ";
-
+	poly(*food);
 
 
 	cout << endl << endl;
@@ -82,7 +82,7 @@ int main()
 	cout << "Price=" << apples->getUnitPrice() << endl << endl;
 	apples->show(cout);
 	cout << "Call polymorphic function:\n ";
-
+	poly(*apples);
 
 
 	cout << endl << endl;
@@ -97,7 +97,7 @@ int main()
 	cout << "Price=" << freshPtr->getUnitPrice() << endl << endl;
 	freshPtr->show(cout);
 	cout << "Call polymorphic function:\n ";
-
+	poly(*freshPtr);
 
 
 	cout << endl << endl;
